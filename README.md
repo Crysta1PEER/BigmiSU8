@@ -24,6 +24,7 @@
 -240526 #login_with_jdbc @魏涛 测试Session缓存功能。修改bug并提交至仓库。
 +240601 #buycar @程义峰 图片素材更新。
 +240601 #buycar @刘巍然 连接Servlet，修改文件结构等细微问题。@魏涛 数据库连接servlet并提交仓库。
++240603 #buycar 交由@王焱琛 进行后端连接测试。
 +240608 #bigmisu8 @魏涛 建立新仓库。
 -240609 #buycar @程义峰 文件结构修改。
 +240611 #bigmisu8 @魏涛 Readme.md文件。
