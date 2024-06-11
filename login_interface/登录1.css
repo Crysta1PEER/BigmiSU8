@@ -1,0 +1,186 @@
+* {
+    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    overflow: hidden;
+    width: 90%;
+    max-width: 400px;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+/* 添加默认隐藏样式 */
+.signup-box {
+    display: none;
+}
+
+.box form {
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.462);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.box form {
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.462);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box form h2 {
+    color: #fff;
+    letter-spacing: 1rem;
+    text-align: center;
+    font-weight: 500;
+    transition: color 0.5s;
+}
+
+.box form:hover h2 {
+    color: #ffcc00;
+}
+
+.box form .input-box {
+    margin-top: 15px;
+    position: relative;
+}
+.input-box {
+    margin-top: 15px;
+    position: relative; /* 添加相对定位 */
+}
+.input-box label {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    color: #fff;
+    margin-bottom: 10px; /* 添加下方 margin */
+    transform-origin: top left;
+    transform: translateY(0) scale(1);
+    transition: transform 0.5s ease-out;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 5px 0;
+    background-color: transparent;
+    color: #c2bfbfc2;
+    border: none;
+    transition: padding 0.5s;
+}
+
+.input-box:hover label,
+.input-box input:focus + label {
+    transform: translateY(-5px) scale(0.8);
+}
+.input-box input:focus {
+    outline: none;
+}
+
+.input-box span.bottom-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-out;
+}
+
+.input-box input:focus + span.bottom-line {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.input-box input:hover {
+    padding: 8px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.links a {
+    text-align: center;
+}
+
+#submit1,
+#submit2 {
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#submit1:hover,
+#submit2:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+/* 媒体查询：在小屏幕上调整样式 */
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 80vh;
+        margin-top: 50%;
+    }
+
+    .box form {
+        padding: 15px;
+    }
+
+    .input-box input {
+        padding: 8px 0;
+    }
+}

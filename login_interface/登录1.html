@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="登录1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box login-box">
+            <form onsubmit="return signin()" action="signinsuccess.html">
+                <h2>Sign In</h2>
+                <div class="input-box">
+                    <label for="name">UserName</label>
+                    <input type="text" id="name" required>
+                    <span class="bottom-line"></span>
+                </div>
+                <div class="input-box">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" required>
+                    <span class="bottom-line"></span>
+                </div>
+                <div class="links">
+                    <a href="#" onclick="toggleForm('signup')">Don't have an account? Sign Up</a>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <input type="submit" name="" id="submit1" value="Sign In">
+            </form>
+        </div>
+
+        <div class="box signup-box">
+            <form onsubmit="return signup()" action="signupsuccess.html">
+                <h2>Sign Up</h2>
+                <div class="input-box">
+                    <label for="signup-name">UserName</label>
+                    <input type="text" id="signup-name" required>
+                    <span class="bottom-line"></span>
+                </div>
+                <div class="input-box">
+                    <label for="signup-pass">Password</label>
+                    <input type="password" id="signup-pass" required>
+                    <span class="bottom-line"></span>
+                </div>
+                <div class="links">
+                    <a href="#" onclick="toggleForm('login')">Already have an account? Sign In</a>
+                </div>
+                <input type="submit" name="" id="submit2" value="Sign Up">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm(formType) {
+            if (formType === 'signup') {
+                document.querySelector('.login-box').style.display = 'none';
+                document.querySelector('.signup-box').style.display = 'block';
+            } else if (formType === 'login') {
+                document.querySelector('.signup-box').style.display = 'none';
+                document.querySelector('.login-box').style.display = 'block';
+            }
+        }
+
+        function signin() {
+            // 登录验证逻辑
+            return false; // 阻止表单提交，以便在示例中演示
+        }
+
+        function signup() {
+            // 注册验证逻辑
+            return false; // 阻止表单提交，以便在示例中演示
+        }
+    </script>
+</body>
+
+</html>
