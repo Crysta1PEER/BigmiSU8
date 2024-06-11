@@ -23,6 +23,8 @@
 +240525 #buycar @程义峰 @刘巍然 选车界面前端（预览版）提交至仓库。
 -240526 #login_with_jdbc @魏涛 测试Session缓存功能。修改bug并提交至仓库。
 +240527 #login_interface @刘少瑞 登录界面上传。
++240529 #main_page @刘云涛 主页界面上传。
++240529 #bigmisu8 @刘云涛 发布header/footer 标准
 +240601 #buycar @程义峰 图片素材更新。
 +240601 #buycar @刘巍然 连接Servlet，修改文件结构等细微问题。@魏涛 数据库连接servlet并提交仓库。
 +240603 #buycar 交由@王焱琛 进行后端连接测试。

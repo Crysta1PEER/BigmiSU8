@@ -1,0 +1,106 @@
+       * {
+                margin: 0;
+                padding: 0;
+            }
+        body{
+            height: 100vh;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color:transparent;
+            width: 100%;
+            position: fixed;
+            height: 50px;
+
+        }
+        .header:hover{
+            background-color: rgba(0,0,0,0.7);
+        }
+        .logo{
+            float:left;
+        }
+        .Top-middle{
+            position: relative;
+            left: 400px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .nav{
+            width: 130px;
+            float:left;
+            display: inline-block;
+            left:200px;
+        }
+        .logo a {
+            color: white;
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .Top-middle a {
+            color: white;
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        a:hover{
+            color: rgba(71,70,71,0.96);
+
+        }
+        .dropdown-content{
+            background-color: rgba(0,0,0,0.3);
+            display: none;
+            float: left;
+        }
+        .nav:hover .dropdown-content{
+            display:block;
+        }
+        .Top-right a {
+            color: white;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px;
+
+        }
+        .chooseBtn{
+            background-color: white;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 10px;
+            position: relative;
+            top: 9px;
+            right: 20px;
+            float: right;
+        }
+        .chooseBtn a{
+            color: black;
+        }
+        .loginBtn{
+            background-color: transparent;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 10px;
+            position: relative;
+            top: 9px;
+            right: 30px;
+            float: right;
+        }
+        .loginBtn:hover{
+            background-color: white;
+        }
+        .loginBtn:hover .loginBtn-a{
+            color: black;
+        }
