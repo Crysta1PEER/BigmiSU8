@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选车页面</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+            background: url(image/p_bj3.jpg) no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            ;
+        }
+
+        .card-effect {
+            transition: opacity 0.5s ease;
+            /* 添加透明度变化的过渡效果 */
+            opacity: 0.5;
+            /* 初始透明度 */
+        }
+
+        .card-hover:hover {
+            opacity: 1;
+        }
+
+        #card1_hidden {
+            display: none;
+            /* 默认隐藏 */
+            background-color: #f0f0f0;
+        }
+
+        #card2_hidden {
+            display: none;
+            /* 默认隐藏 */
+            background-color: #f0f0f0;
+        }
+
+        #card3_hidden {
+            display: none;
+            /* 默认隐藏 */
+            background-color: #f0f0f0;
+        }
+
+        #card1:hover #card1_hidden {
+            display: block;
+            /* 鼠标悬停时显示 */
+        }
+
+        #card2:hover #card2_hidden {
+            display: block;
+            /* 鼠标悬停时显示 */
+        }
+
+        #card3:hover #card3_hidden {
+            display: block;
+            /* 鼠标悬停时显示 */
+        }
+
+        #card1.clicked {
+            display: block;
+            opacity: 1;
+            /* 鼠标点击时显示 */
+        }
+
+        #card2.clicked {
+            display: block;
+            opacity: 1;
+            /* 鼠标点击时显示 */
+        }
+
+        #card3.clicked {
+            display: block;
+            opacity: 1;
+            /* 鼠标点击时显示 */
+        }
+
+        /* 使提交选项不可见 */
+        .hidden-radio {
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 标题 -->
+        <h2 class="text-center">选择你的新款大米SU7</h2>
+        <br>
+
+        <!-- 卡片 -->
+        <div class="card card-hover card-effect" id="card1">
+            <div class="card-header">
+                <div class=" row justify-content-between">
+                    <h3 class="col-4">SU7</h3>
+                    <p class="col-4 h4">￥ 215,900起</p>
+                </div>
+
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3">
+                        <h4>5.28s</h4>
+                        <div class="text-muted">百公里加速</div>
+                    </div>
+                    <div class="col-3">
+                        <h4>700km</h4>
+                        <div class="text-muted">续航里程(CLTC)</div>
+                    </div>
+                    <div class="col-6">
+                        <h4>Xiaomi Pilot Pro</h4>
+                        <div class="text-muted">大米智驾Pro</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-footer text-muted card-hidden" id="card1_hidden">
+                <ul>
+                    <li>220kW单电机后驱</li>
+                    <li>前双叉臂&后五连杆独立悬架</li>
+                    <li>小米澎湃智能座舱，骁龙8295智能座舱芯片</li>
+                    <li>高品质 10扬声器</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <br><br>
+
+        <div class="card card-hover card-effect" id="card2">
+            <div class="card-header">
+                <div class=" row justify-content-between">
+                    <h3 class="col-4">SU7 Pro</h3>
+                    <p class="col-4 h4">￥ 245,900起</p>
+                </div>
+
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3">
+                        <h4>5.7s</h4>
+                        <div class="text-muted">百公里加速</div>
+                    </div>
+                    <div class="col-3">
+                        <h4>830km</h4>
+                        <div class="text-muted">续航里程(CLTC)</div>
+                    </div>
+                    <div class="col-6">
+                        <h4>Xiaomi Pilot Max</h4>
+                        <div class="text-muted">大米智驾Pro</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-footer text-muted card-hidden" id="card2_hidden">
+                <ul>
+                    <li>220kW单电机后驱</li>
+                    <li>前双叉臂&后五连杆独立悬架</li>
+                    <li>小米澎湃智能座舱，骁龙8295智能座舱芯片</li>
+                    <li>高品质 10扬声器</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <br><br>
+
+        <div class="card card-hover card-effect" id="card3">
+            <div class="card-header">
+                <div class=" row justify-content-between">
+                    <h3 class="col-4">SU7 Max</h3>
+                    <p class="col-4 h4">￥ 299,900起</p>
+                </div>
+
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3">
+                        <h4>2.78s</h4>
+                        <div class="text-muted">百公里加速</div>
+                    </div>
+                    <div class="col-3">
+                        <h4>800km</h4>
+                        <div class="text-muted">续航里程(CLTC)</div>
+                    </div>
+                    <div class="col-6">
+                        <h4>Xiaomi Pilot Max</h4>
+                        <div class="text-muted">小米智驾Max</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-footer text-muted card-hidden" id="card3_hidden">
+                <ul>
+                    <li>495kW双电机四驱</li>
+                    <li>前双叉臂&后五连杆独立悬架</li>
+                    <li>空气悬架&CDC减振器&电动尾翼</li>
+                    <li>小米澎湃智能座舱，骁龙8295智能座舱芯片</li>
+                    <li>高品质 25扬声器</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <br><br>
+
+
+
+        <!-- 开始配置 -->
+        <div class="text-center">
+            <form action="buy1_color.html">
+
+                <button class="btn btn-primary btn-lg">预约试驾</button>
+                <button class="btn btn-primary btn-lg">开始配置</button>
+
+                <!-- 当选中card时直接选择车型提交，隐藏input选项保持美观 -->
+                <input type="radio" class="hidden-radio" id="select_car1" name="choice" value='1' placeholder=""
+                    checked="checked" />
+                <input type="radio" class="hidden-radio" id="select_car2" name="choice" value='1' placeholder=""
+                    checked="checked" />
+                <!-- 默认提交项 -->
+                <input type="radio" class="hidden-radio" id="select_car3" name="choice" value='1' placeholder=""
+                    checked="checked" />
+
+            </form>
+
+        </div>
+        <br><br>
+
+
+
+
+
+    </div>
+
+    <script>
+        const card1 = document.getElementById('card1');
+        const card2 = document.getElementById('card2');
+        const card3 = document.getElementById('card3');
+        card1.addEventListener('click', function () {
+            card2.classList.remove('clicked');
+            card3.classList.remove('clicked');
+            this.classList.add('clicked'); // 添加类"clicked"表示被点击的状态
+        });
+        card2.addEventListener('click', function () {
+            card1.classList.remove('clicked');
+            card3.classList.remove('clicked');
+            this.classList.add('clicked'); // 添加类"clicked"表示被点击的状态
+        });
+        card3.addEventListener('click', function () {
+            card1.classList.remove('clicked');
+            card2.classList.remove('clicked');
+            this.classList.add('clicked'); // 添加类"clicked"表示被点击的状态
+        });
+
+        document.getElementById('card1').addEventListener('click', function (event) {
+            document.getElementById('select_car1').checked = true; // 选中radio1
+        });
+        document.getElementById('card2').addEventListener('click', function (event) {
+            document.getElementById('select_car2').checked = true; // 选中radio1
+        });
+        document.getElementById('card3').addEventListener('click', function (event) {
+            document.getElementById('select_car3').checked = true; // 选中radio1
+        });
+
+    </script>
+</body>
+
+</html>
